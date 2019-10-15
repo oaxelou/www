@@ -1,0 +1,289 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+html, body{
+	height:100%;
+}
+
+
+body{
+	/*background-color:#9c9f84;*/
+	background-image:url(images/history.jpg);
+	margin: 0px;
+	font-family: Verdaa, Georgia, serif;
+	font-size: 14px;
+}
+
+#header{
+	background-color: #5c755e;
+	margin: 10px;
+	height: 90px;
+	border-radius: 5px;
+	border-color: #4b522c;
+	border-width: 3px;
+	border-style: solid;
+}
+
+img{
+	margin-top: 2px;
+	margin-right:3px;
+	max-width:140%;
+	max-height:100%;
+	float: right;
+}
+
+h3{
+	margin: 0px;
+	font-size: 290%;
+	text-align: center;
+	color: #e5e4d7;
+	position: relative;
+	 top: 25%;
+	 left: 2.7%;
+}
+
+#navbar ul{
+	padding: 5px;
+	font-size:120%;
+	list-style-type:none;
+	text-align: center;
+	background-color: #000;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+#navbar ul li{
+	display: inline;
+}
+
+#navbar ul li a{
+	text-decoration: none;
+	font-family: Arial;
+	padding: .2em 1em;
+	color: #fff;
+	background-color: #000;
+}
+
+#navbar ul li a:hover{
+	color: #000;
+	background-color: #fff;
+}
+
+#container{
+	min-height:73%; /*This is for the footer*/
+}
+
+.main{
+	background-color: #e5e4d7;
+	margin-left:10px;
+	margin-right:400px; /* Kanonika htan 320px */
+	margin-top: 10px;
+	margin-bottom:10px;
+	
+	border-radius: 5px;
+	padding: 20px;
+	font-size:140%;
+	line-height: 1.5;
+	overflow: auto;
+	padding-bottom:100px;
+}
+.main_index{
+	background-color:black;
+	margin-left:10px;
+	margin-right:400px; /* Kanonika htan 320px */
+	margin-top: 10px;
+	margin-bottom:10px;
+	
+	border-radius: 5px;
+	padding: 20px;
+	font-size:140%;
+	line-height: 1.5;
+	overflow: auto;
+	padding-bottom:100px;
+	color: #e5e4d7;
+}
+
+#left_main{
+	padding: 10px;
+	margin-left: 20px;
+	float:left;
+	padding-right: 2px;
+}
+
+#right_main{
+	background-color: #e5e4d7;
+	margin-top: 10px;
+	margin-bottom:10px;
+	margin-right: 20px;
+	float: right;
+	margin-left: 10px;/*
+	border-left: 2px solid grey;
+	width:600px;*/
+}
+
+.main ul{
+	padding: 10px;
+	list-style-type:circle;
+	border-radius: 0px;
+}
+
+.main ul li{/**/
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid grey;
+  font-size: 20px;
+  margin: 8px 0;
+  outline: none;
+  color: #5c755e;
+}
+
+.main ul li a{/**/
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  margin: 8px 0;
+  display: block;
+  outline: none;
+  color: #5c755e;
+}
+
+.main ul li a:hover{
+	color: blue;
+}
+
+#index_photo{
+	text-align: left;
+	width:50%;
+}
+
+#quote{
+	font-family: serif;
+	line-height: 1.3;
+	font-size: 105%
+}
+
+h2{
+	margin: 0px;
+	font-size: 140%;
+	color: black;
+}
+
+h4{
+	margin: 0px;
+	font-size: 140%;
+}
+
+#trojanWarImage{
+	width:40%;
+	text-align:left;
+	float:right;
+	margin-top:1px;
+}
+
+#imageOfMe{
+	width:7%;
+	text-align:left;
+	float:left;
+	margin-top:1px;
+}
+
+#google_maps{
+	float: right;
+}
+
+#left_area{
+	float:left;
+}
+#right_area{
+	float:right;
+}
+
+.sideright{
+	background-color: #e5e4d7;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top: 0px;
+	margin-bottom:10px;
+	border-radius: 5px;
+	padding: 20px;
+	font-size:130%;
+	width:300px;
+	line-height: 1.3;
+	color: #5c755e;
+}
+
+#sponsor{
+	width:90%;
+	text-align:bottom;
+	float:center;
+	margin-left:-10px;
+}
+
+.sideright ul{
+	list-style-type:none;
+}
+
+.sideright ul li a{
+	text-decoration:none;
+	color: rgb(66,107,46);
+}
+
+#footer{
+	background-color: #5c755e;
+	margin: 10px;
+	height: 60px;
+	border-radius: 5px;
+	clear:both;
+	text-align: center;
+	padding: 15px;
+	font-size: 90%;
+	border-color: #4b522c;
+	border-width: 3px;
+	border-style: solid;
+	position:relative;
+	bottom:0;
+	width:100%;
+	clear: both;
+}
+
+#footer ul{
+	padding: 5px;
+	list-style-type:none;
+	text-align: center;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+#footer ul li{
+	display: inline;
+}
+
+#footer ul li a{
+	text-decoration: none;
+	font-family: Arial;
+	padding: .2em 1em;
+	color: #fff;
+}
+
+#footer ul li a:hover{
+	color: #000;
+	background-color: #fff;
+}
+
+
+@media (max-width: 600px){
+	.sideright{
+		diplay:none;
+	}
+	
+	#right_main{
+		background-color: #e5e4d7;
+		margin-top: 10px;
+		margin-bottom:10px;
+		margin-right: 20px;
+		float: left;
+		margin-left: 10px;
+	}
+}
