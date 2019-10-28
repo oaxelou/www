@@ -1,0 +1,87 @@
+<!doctype html>
+
+<!-- 
+Author: Olympia Axelou, oaxelou@uth.gr
+Date: October, 2019
+-->
+
+<html>
+<head>
+<title>Olympia's DB</title>
+<link rel="icon" type="image/x-icon" href="images/db_logo.png">
+<link type="text/css" rel="stylesheet" href="stylesheet.css">
+<meta property="og:image" content="images/thumbnail.png" />
+<meta name="description"content="A simple database website. Here you can register
+and login.
+Cheers!"/>
+<meta name="keywords"content="db, database, simple, register, login"/>
+<meta name="author"content="Olympia Axelou"/>
+</head>
+
+<body>
+	<div id="header">
+		<img id="logo" src="images/db_logo.jpg" alt="logo">
+		<h1>Olympia's Simple Database</h1>
+	</div>
+
+	<div id="main-body">
+		<div id="form-container">
+			<div id="left-form-container">
+				<div id="left-form">
+					<form class="sub-form" action="Register" method="post"><p><table>
+					<tr></tr>
+					<tr>
+						<td><font face="verdana" size="2px">New Name:</font></td>
+						<td><input type="text" name="userName" maxlength="100" size="20" required></td>
+					</tr>
+					
+					<tr>
+						<td><font face="verdana" size="2px">New Password:</font></td>
+						<td><input type="password" name="userPassword" maxlength="100" size="20" required></td>
+					</tr>
+					<tr></tr>
+					<tr>
+						<td><input type="submit" value="Register" class="sub-but"></td>
+					</tr>
+					
+					</table></p></form>
+				</div>
+			</div>
+		
+		
+			<div id="right-form-container">
+				<div id="right-form">
+					<form class="sub-form" action="Login" method="post"><p><table>
+					<tr></tr>
+					
+					<tr>
+						<td><font face="verdana" size="2px">Name:</font></td>
+						<td><input type="text" name="userName" maxlength="100" size="20" required></td> 
+					</tr>
+					
+					<tr>
+						<td><font face="verdana" size="2px">Password:</font></td>
+						<td><input type="password" name="userPassword" maxlength="100" size="20" required></td>
+					</tr>
+					<tr></tr>
+					<tr>
+					<td><input type="submit" value="Login" class="sub-but"></td>
+					</tr>
+					
+					</table>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+	<a id="home-url" href="index.html" style="color: #17252a">
+	<img id="home-button" src="images/home.png" alt="home">
+	Return to home page
+	</a>
+	</div>
+
+
+</body>
+</html>
