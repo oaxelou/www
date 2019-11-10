@@ -60,7 +60,7 @@ public class Login extends HttpServlet {
 		pwriter.println(header_str);
 		//System.out.println(header_str);
 		
-		/****************  START OF JDBC STUFF  *******************/
+		/****************  START OF HIBERNATE STUFF  *******************/
 		
 	
 		try {
@@ -79,13 +79,14 @@ public class Login extends HttpServlet {
 			
 			System.out.println("Get complete: " + dbUser);
 			if (dbUser == null) {
+				pwriter.println("<h2>User <i>" + user + "</i> does not exist in database.</h2>");
 				System.out.println("User doesn't exist");
 			}else {
 				if(pass.equals(dbUser.getPassword())) {
-					pwriter.println("<h2>Successfully logged in as " + user + "</h2>");
+					pwriter.println("<h2>Successfully logged in as <i>" + user + "</i></h2>");
 					System.out.println("Registration Successful!");
 				}else {
-					pwriter.println("<h2>Wrong password for user  " + user + ".</h2>");
+					pwriter.println("<h2>Wrong password for user  <i>" + user + "</i>.</h2>");
 					System.out.println("Wrong password!");
 				}	
 			}
