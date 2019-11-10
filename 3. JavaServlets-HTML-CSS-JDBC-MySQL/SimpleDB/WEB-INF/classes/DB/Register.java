@@ -22,7 +22,7 @@ public class Register extends HttpServlet {
 		
 		PrintWriter pwriter = res.getWriter();
 		try{
-			Scanner scanner = new Scanner( new File("/opt/tomcat/webapps/New_3rdAssignment/header.html"), "UTF-8" );
+			Scanner scanner = new Scanner( new File("/opt/tomcat/webapps/SimpleDB/header.html"), "UTF-8" );
 			String text = scanner.useDelimiter("\\A").next();
 			scanner.close(); 
 			pwriter.println(text);
@@ -70,7 +70,7 @@ public class Register extends HttpServlet {
 		
 		// Adding Footer
 		try{
-			Scanner scanner = new Scanner( new File("/opt/tomcat/webapps/New_3rdAssignment/footer.html"), "UTF-8" );
+			Scanner scanner = new Scanner( new File("/opt/tomcat/webapps/SimpleDB/footer.html"), "UTF-8" );
 			String text = scanner.useDelimiter("\\A").next();
 			scanner.close();
 			pwriter.println(text);
@@ -91,7 +91,7 @@ public class Register extends HttpServlet {
 			  throws IOException, ServletException{
 		PrintWriter pwriter = res.getWriter();
 		try{
-			Scanner scanner = new Scanner( new File("/opt/tomcat/webapps/New_3rdAssignment/header.html"), "UTF-8" );
+			Scanner scanner = new Scanner( new File("/opt/tomcat/webapps/SimpleDB/header.html"), "UTF-8" );
 			String text = scanner.useDelimiter("\\A").next();
 			scanner.close();
 			pwriter.println(text);
@@ -108,7 +108,7 @@ public class Register extends HttpServlet {
 		
 		// Adding Footer
 		try{
-			Scanner scanner = new Scanner( new File("/opt/tomcat/webapps/New_3rdAssignment/footer.html"), "UTF-8" );
+			Scanner scanner = new Scanner( new File("/opt/tomcat/webapps/SimpleDB/footer.html"), "UTF-8" );
 			String text = scanner.useDelimiter("\\A").next();
 			scanner.close();
 			pwriter.println(text);
