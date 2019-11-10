@@ -1,3 +1,8 @@
+/*
+Author: Olympia Axelou, oaxelou@uth.gr
+Date: 11 October, 2019
+*/
+
 package Util;
 
 import Entity.User;
