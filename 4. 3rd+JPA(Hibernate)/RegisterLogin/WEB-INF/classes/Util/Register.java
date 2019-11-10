@@ -1,3 +1,8 @@
+/*
+Author: Olympia Axelou, oaxelou@uth.gr
+Date: 11 October, 2019
+*/
+
 package Util;
 
 import Entity.User;
@@ -59,7 +64,7 @@ public class Register extends HttpServlet {
 		pwriter.println(header_str);
 		//System.out.println(header_str);
 		
-		/****************  START OF JDBC STUFF  *******************/
+		/****************  START OF HIBERNATE STUFF  *******************/
 		try {
 			// create a student object
 			System.out.println("Creating a new user object...");
@@ -85,13 +90,13 @@ public class Register extends HttpServlet {
 				System.out.println(exc.toString());
 				
 				pwriter.println("<h2>Registration failed!</h2>");
-				pwriter.println("<br><p>User " + user + " already exists in DB.</p>");
+				pwriter.println("<br><p>User <i>" + user + "</i> already exists in DB.</p>");
 			}finally {
 				System.out.println("Got to finally!");
 			}
 			factory.close();
 			System.out.println("Done!");
-			pwriter.println("<h2>Successfully registered as " + user + ".</h2>");
+			pwriter.println("<h2>Successfully registered as <i>" + user + "</i>.</h2>");
 		}catch(Exception e){
 			pwriter.println("<h2>An error occurred while connecting to MySQL database</h2>");
 			pwriter.println(e.toString());
