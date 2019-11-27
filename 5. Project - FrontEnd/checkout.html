@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Checkout</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+
+	<div class="topbar"></div>
+	<div class="social_icon">
+		<div class="container">
+			<div class="header_right">
+				<div class="login_register_btn">
+					<a href="login_register.html">Login / Register</a>
+				</div>
+				<div class="cart_btn">
+					<a href="cart.html">
+						<img src="images/cart.png">
+						<span>Cart(0)</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header">
+		<div class="container">
+			<div class="navbar">
+				<div class="nav_background">
+					<div class="home_btn"><a href="index.html">HOME</a></div>
+
+					<div class="dropdown">
+						<button class="dropbtn">WOMEN</button>
+						<div class="dropdown-content">
+							<a href = "shirts.html">SHIRTS</a>
+							<a href = "trousers.html">TROUSERS</a>
+							<a href = "shoes.html">SHOES</a>
+						</div>
+					</div>
+
+					<div class="about_us_btn"><a href="about.html">ABOUT US</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MAIN BODY OF THE HTML PAGE -->
+
+	<div class="container">
+		<div class="main_body">
+			<div class="page_title">
+				<h2>CHECKOUT</h2>
+			</div>
+
+			<div class="payment_shpping_column">
+				<div class="shipping_details_column">
+					<h4>SHPPING DETAILS</h4>
+					<table>
+						<tr><td>Olympia Axelou</td>
+							<td>olympia@axelou.com</td>
+						</tr>
+						<tr><td>38221 Volos</td></tr>
+						<tr><td>Gklavanh 7</td></tr>
+						<tr><td>Greece</td></tr>
+					</table>
+				</div>
+				<div class="payment_table">
+					<br><h4>PAYMENT DETAILS</h4>
+					<form class="pay_form" action="thankyou.html" method="post"><table>
+						<tr><td colspan="2"><input name="credit-number" type=" number" class="creditCardText"  maxlength="19" placeholder="Card Number" required></td></tr>
+
+						<tr><td><input name="credit-cvc" class="cc-cvc" type="tel" pattern="\d*" maxlength="3" placeholder="CVC" required></td>
+						<td><input name="credit-expires" class="cc-expires" type="month" maxlength="7" required></td></tr>
+						<tr><td colspan="2"><input type="submit" class="form-submit" value="Pay Now"></td></tr>
+					</table></form>
+				</div>
+			</div>
+
+			<div class="order_details_column">
+				<h4>YOUR ORDER</h4><h5><a href="cart.html">EDIT SHOPPING CART</a></h5>
+				<table>
+					<tr><th>Item</th>
+					<th>Name</th>
+					<th>Quantity</th>
+					<th>Price</th></tr>
+
+					<tr><td><img src="images/products/1.png"></td>
+					<td>Leathered Pants</td>
+					<td>2</td>
+					<td>$19.98</td></tr>
+
+					<tr><td><img src="images/products/2.png"></td>
+					<td>Shirt with Golden Buttons</td>
+					<td>1</td>
+					<td>$19.99</td></tr>
+
+					<tr><td></td><td></td>
+						<td>Subtotal<br><br>Shipping<br><br><b>Total</b></td>
+						<td>$39.97<br><br>$0<br><br><b>$39.97</b></td></tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER AND BOTTOM PART -->
+
+	<div class="footer">
+		<div class="container">
+			<div class="column3">
+				<h4>About Us</h4>
+				<p>We are undergraduate students
+				at the University of Thessaly, in
+				particular in the department of
+				Electrical and Computer Engineering.</p>
+				<br><h4>Follow us on social media!</h4>
+				<p> <img src="images/media/facebook_icon.png">
+					<img src="images/media/twitter_icon.png">
+					<img src="images/media/instagram_icon.png">
+				</p>
+			</div>
+
+			<div class="column3 second-column">
+				<h4>Location</h4>
+				<div class="mapouter">
+					<div class="gmap_canvas">
+						<iframe width="201" height="159" id="gmap_canvas" src="https://maps.google.com/maps?q=volos&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+						</iframe>
+					</div>
+				</div>
+			</div>
+
+			<div class="column3 third-column">
+				<h4>Contact Us</h4>
+				<p> We provide 24hr phone support </p>
+				<br>
+				<ul class="contact_info_list">
+					<li>Eshop, Helen & Olympia</li>
+					<li>Volos, Magnesia, Greece</li>
+					<li><img src="images/contact/phone_icon.png">+30 24210 56666</li>
+					<li><img src="images/contact/email_icon.png"><a href=mailto:eshop@gmail.com>eshop@gmail.com</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="bottom">
+		<div class="container">
+			<div class="bottom_nav_bar">
+				<a href="index.html">Home</a>
+				<a href="#">Products</a>
+				<a href="shirts.html">Women</a>
+
+			</div>
+			<div class="copyrights">
+				©2019 All Rights Reserved
+				<!-- <p>©2019 Musica Store by Helen & Olympia | All Rights Reserved</p> -->
+			</div>
+		</div>
+	</div>
+
+</div> <!--main-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$('.creditCardText').keyup(function() {
+  var foo = $(this).val().split("-").join(""); // remove hyphens
+  if (foo.length > 0) {
+    foo = foo.match(new RegExp('.{1,4}', 'g')).join("-");
+  }
+  $(this).val(foo);
+});
+</script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.cycle.all.js"></script>
+<script>
+	$('.slideshow').cycle({
+		next:'#next',
+		prev: '#prev'
+	})
+
+</script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+
+    <div class="topbar"></div>
+    <div class="social_icon">
+      <div class="container">
+        <div class="header_right">
+          <div class="login_register_btn">
+            <a href="#">Login /</a>
+            <a href="#">Register</a>
+          </div>
+          <div class="cart_btn">
+            <a href="cart.html">
+            <img src="images/cart.png">
+            <span>Cart(0)</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="nav_background">
+            <div class="home_btn"><a href="index.html">HOME</a></div>
+
+            <div class="dropdown">
+              <button class="dropbtn">WOMEN</button>
+              <div class="dropdown-content">
+                <a href = "shirts.html">SHIRTS</a>
+                <a href = "trousers.html">TROUSERS</a>
+                <a href = "shoes.html">SHOES</a>
+              </div>
+            </div>
+
+            <div class="about_us_btn"><a href="about.html">ABOUT US</a></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="login">
+      <div class="container">
+        <div class="page_title">
+          <h1>User Login and Registration Form</h1>
+        </div>
+
+        <div class="both_container">
+          <div class="left_container">
+            <form action="<%= request.getContextPath() %>/LoginController" method="post">
+                <div class="tables">
+                  <table>
+                  <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="username" placeholder="username"/></td>
+                  </tr>
+                  <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" placeholder="password" /></td>
+                  </tr>
+                  </table>
+              </div>
+              <input id="login_button" type="submit" value="Submit" />
+            </form>
+        </div>
+
+        <div class="right_container">
+           <form action="<%= request.getContextPath() %>/register" method="post">
+            <div class="tables">
+               <table>
+                <tr>
+                 <td>First Name</td>
+                 <td><input type="text" name="first_name" placeholder="John"/></td>
+                </tr>
+                <tr>
+                 <td>Last Name</td>
+                 <td><input type="text" name="last_name" placeholder="Smith"/></td>
+                </tr>
+                <tr>
+                 <td>Username</td>
+                 <td><input type="text" name="username" placeholder="jsmith"/></td>
+                </tr>
+                <tr>
+                 <td>Password</td>
+                 <td><input type="password" name="password" /></td>
+                </tr>
+                <tr>
+                 <td>Email Address</td>
+                 <td><input type="email" name="email"  placeholder="jsmith@gmail.com"/></td>
+                </tr>
+                 </table>
+             </div>
+           <input type="submit" value="Submit" id="register_button"/>
+          </form>
+            
+
+
+
+
+
+
+        </div>
+
+          
+
+
+        </div>
+   
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <div class="container">
+      <div class="column3">
+        <h4>About Us</h4>
+        <p>We are undergraduate students
+        at the University of Thessaly, in
+        particular in the department of
+        Electrical and Computer Engineering.</p>
+        <br><h4>Follow us on social media!</h4>
+        <p> <img src="images/media/facebook_icon.png">
+          <img src="images/media/twitter_icon.png">
+          <img src="images/media/instagram_icon.png">
+        </p>
+      </div>
+
+      <div class="column3 second-column">
+        <h4>Location</h4>
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe width="201" height="159" id="gmap_canvas" src="https://maps.google.com/maps?q=volos&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="column3 third-column">
+        <h4>Contact Us</h4>
+        <p> We provide 24hr phone support </p>
+        <br>
+        <ul class="contact_info_list">
+          <li>Eshop, Helen & Olympia</li>
+          <li>Volos, Magnesia, Greece</li>
+          <li><img src="images/contact/phone_icon.png">+30 24210 56666</li>
+          <li><img src="images/contact/email_icon.png"><a href=mailto:eshop@gmail.com>eshop@gmail.com</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+    <div class="bottom">
+      <div class="container">
+        <div class="bottom_nav_bar">
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Baby&Kids</a>
+        </div>
+        <div class="copyrights">
+          ©2019 All Rights Reserved
+          <!-- <p>©2019 Musica Store by Helen & Olympia | All Rights Reserved</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping Cart</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+
+	<div class="topbar"></div>
+	<div class="social_icon">
+		<div class="container">
+			<div class="header_right">
+				<div class="login_register_btn">
+					<a href="login_register.html">Login / Register</a>
+				</div>
+				<div class="cart_btn">
+					<a href="cart.html">
+						<img src="images/cart.png">
+						<span>Cart(0)</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header">
+		<div class="container">
+			<div class="navbar">
+				<div class="nav_background">
+					<div class="home_btn"><a href="index.html">HOME</a></div>
+
+					<div class="dropdown">
+						<button class="dropbtn">WOMEN</button>
+						<div class="dropdown-content">
+							<a href = "shirts.html">SHIRTS</a>
+							<a href = "trousers.html">TROUSERS</a>
+							<a href = "shoes.html">SHOES</a>
+						</div>
+					</div>
+
+					<div class="about_us_btn"><a href="about.html">ABOUT US</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MAIN BODY OF THE HTML PAGE -->
+
+	<div class="container">
+		<div class="main_body">
+			<div class="page_title">
+				<h2>SHOPPING CART</h2>
+			</div>
+
+			<table class="shopping_list">
+				<tbody>
+					<tr>
+						<th>Remove</th>
+						<th>Item</th>
+						<th></th>
+						<!-- <th></th> -->
+						<th>Price</th>
+						<th>Quantity</th>
+						<th>Total</th>
+					</tr>
+					<tr>
+						<th><input type="checkbox"></th>
+						<td><img src="images/products/1.png"></td>
+						<td>Leathered Pants</td>
+						<!-- <td>Leathered black pants.</td> -->
+						<td>$9.99</td>
+						<td>2</td>
+						<td><b>$19.98</b></td>
+					</tr>
+					<tr>
+						<th><input type="checkbox"></th>
+						<td><img src="images/products/2.png"></td>
+						<td>Shirt with Golden Buttons</td>
+						<!-- <td>White simple, basic shirt.</td> -->
+						<td>$19.99</td>
+						<td>1</td>
+						<td><b>$19.99</b></td>
+					</tr>
+					<tr>
+						<th></th>
+						<th></th>
+						<th></th>
+						<!-- <th></th> -->
+						<th></th>
+						<th>Total:</th>
+						<th>$39.97</th>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="options_area">
+				<div class="continue_shopping_btn">
+					<a href="index.html"><img src="images/cart/continue_shopping.png">CONTINUE SHOPPING</a>
+				</div>
+				<div class="update_cart_btn">
+					<a href="cart.html"><img src="images/cart/update_cart.png">UPDATE CART</a>
+				</div>
+				<div class="clear_cart_btn">
+					<a href="cart.html"><img src="images/cart/clear_cart.png">CLEAR CART</a>
+				</div>
+				<div class="checkout_btn">
+					<a href="checkout.html"><img src="images/cart/checkout.png">CHECKOUT</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER AND BOTTOM PART -->
+
+		<div class="footer">
+			<div class="container">
+				<div class="column3">
+					<h4>About Us</h4>
+					<p>We are undergraduate students
+					at the University of Thessaly, in
+					particular in the department of
+					Electrical and Computer Engineering.</p>
+					<br><h4>Follow us on social media!</h4>
+					<p> <img src="images/media/facebook_icon.png">
+						<img src="images/media/twitter_icon.png">
+						<img src="images/media/instagram_icon.png">
+					</p>
+				</div>
+
+				<div class="column3 second-column">
+					<h4>Location</h4>
+					<div class="mapouter">
+						<div class="gmap_canvas">
+							<iframe width="201" height="159" id="gmap_canvas" src="https://maps.google.com/maps?q=volos&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+							</iframe>
+						</div>
+					</div>
+				</div>
+
+				<div class="column3 third-column">
+					<h4>Contact Us</h4>
+					<p> We provide 24hr phone support </p>
+					<br>
+					<ul class="contact_info_list">
+						<li>Eshop, Helen & Olympia</li>
+						<li>Volos, Magnesia, Greece</li>
+						<li><img src="images/contact/phone_icon.png">+30 24210 56666</li>
+						<li><img src="images/contact/email_icon.png"><a href=mailto:eshop@gmail.com>eshop@gmail.com</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+	<div class="bottom">
+		<div class="container">
+			<div class="bottom_nav_bar">
+				<a href="#">Home</a>
+				<a href="#">Products</a>
+				<a href="#">Men</a>
+				<a href="#">Women</a>
+				<a href="#">Baby&Kids</a>
+			</div>
+			<div class="copyrights">
+				©2019 All Rights Reserved
+				<!-- <p>©2019 Musica Store by Helen & Olympia | All Rights Reserved</p> -->
+			</div>
+		</div>
+	</div>
+
+</div> <!--main-->
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.cycle.all.js"></script>
+<script>
+	$('.slideshow').cycle({
+		next:'#next',
+		prev: '#prev'
+	})
+
+</script>
+</body>
+</html>
