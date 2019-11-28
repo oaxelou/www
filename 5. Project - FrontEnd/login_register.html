@@ -77,26 +77,56 @@
             <div class="tables">
                <table>
                 <tr>
-                 <td>First Name</td>
-                 <td><input type="text" name="first_name" placeholder="John"/></td>
+                	<td>First Name</td>
+                	<td><input type="text" name="first_name" placeholder="John"/></td>
                 </tr>
                 <tr>
-                 <td>Last Name</td>
-                 <td><input type="text" name="last_name" placeholder="Smith"/></td>
+                	<td>Last Name</td>
+                	<td><input type="text" name="last_name" placeholder="Smith"/></td>
                 </tr>
                 <tr>
-                 <td>Username</td>
-                 <td><input type="text" name="username" placeholder="jsmith"/></td>
+                	<td>Username</td>
+                	<td><input type="text" name="username" placeholder="jsmith"/></td>
                 </tr>
                 <tr>
-                 <td>Password</td>
-                 <td><input type="password" name="password" /></td>
+                	<td>Password</td>
+                	<td><input type="password" name="password" /></td>
                 </tr>
                 <tr>
-                 <td>Email Address</td>
-                 <td><input type="email" name="email"  placeholder="jsmith@gmail.com"/></td>
+                	<td>Email Address</td>
+                	<td><input type="email" name="email"  placeholder="jsmith@gmail.com"/></td>
                 </tr>
-                 </table>
+                <tr>
+	                <td>Address</td>
+	                <td><input type="text" name="address"  placeholder="2311 Los Robles"/></td>
+                </tr>
+				<tr>
+					<td>Phone Number</td>
+					<td><input type="tel" id="phone" name="phone" placeholder="691 111 1111" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
+					</td>
+				</tr>
+
+				 <tr>
+	                <td>Birthdate</td>
+	                <td><input type="date" name="birthdate" /></td>
+                </tr>
+
+
+				<tr>
+	                <td>Gender</td>
+	                <td>
+	                	<form>
+							<input type="radio" name="gender" value="male" > Male
+						    <input type="radio" name="gender" value="female"> Female
+						    <input type="radio" name="gender" value="other"> Other  
+						</form> 
+					</td>
+                </tr>
+
+              
+     
+
+                </table>
              </div>
            <input type="submit" value="Submit" id="register_button"/>
           </form>
